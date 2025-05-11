@@ -13,6 +13,11 @@ ul, ol, li {
     --secundary-color: #8E4106;
 }
 
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -165,10 +170,6 @@ footer {
         width: 490px;
     }
 
-    .imgPikachu img {
-
-    }
-
     box {
         width: 350px;
     }
@@ -190,7 +191,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px; /* espaçamento entre elementos */
+        gap: 10px;
     }
 
     .texto {
@@ -207,6 +208,8 @@ footer {
         width: 500px;
         height: 500px;
         left: 300px;
+        bottom: none;
+        transform: translateX(none);
     }
 }
 
@@ -256,27 +259,105 @@ footer {
 }
 
 @media (max-width: 500px) {
-
     .texto p {
         display: none;
     }
+    
+    main {
+        min-height: 80vh;
+    }
+
+    .fundo {
+        position: absolute;
+        width: 660px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: -2;
+    }
 
     .fundo span {
-        bottom: 600px;
+        bottom: 440px;
         font-size: 150px;
     }
-    
+
     .fundo span1 {
-        bottom: 600px;
-        font-size: 50px;
+        bottom: 420px;
+        font-size: 130px;
     }
 
     .conteudo {
         margin-top: 20px;
-        padding-left: 10px;
+        padding-left: 50px;
     }
 
+    .texto {
+        margin-top: 300px;
+    }
+
+    .imgPikachu {
+        margin-left: 100px;
+        width: 660px;
+        height: 600px;
+    }
     .imgPikachu img {
+        align-items: center;
+        padding-left: 140px;  
+        height: 100%;
+        width: 100%;  
+        top: 300px;
+        position: relative;
+    }
+}
+
+@media (max-width: 360px) {
+    
+    main {
+        min-height: 80vh;
+    }
+    .fundo {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: -2;
+
+    }
+
+    .fundo span {
+        bottom: 400px;
+        font-size: 200px;
+    }
+
+    .fundo span1 {
+        bottom: 380px;
+        font-size: 130px;
+    }
+
+    .conteudo {
+        width: 1000px;
+        height: 1000px;
+        margin-top: 1500px;
+        padding-left: 450px;
+    }
+
+    .texto {
+        margin-top: 0px;
+    }
+
+    .imgPikachu {
+        margin-left: 100px;
+        width: 660px;
+        height: 600px;
+    }
+    .imgPikachu img {
+        padding-left: 140px;  
+        height: 1000px;
+        width: 1000px;  
         top: 100px;
+        position: absolute;
     }
 }

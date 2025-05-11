@@ -3,7 +3,7 @@
 
 Este é um site do modelo Landing Page, para treino de responsividade
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * HTML
 * CSS
